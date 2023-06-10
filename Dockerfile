@@ -21,6 +21,6 @@ ENV KC_DB_URL=jdbc:postgres:ep-plain-term-789572.eu-central-1.aws.neon.tech/neon
 ENV KC_DB_USERNAME=hamzal3azz
 ENV KC_DB_PASSWORD=gsWAZYX86hIf
 # ENV KC_HOSTNAME=localhost
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh","start"]
 
 # postgres://hamzal3azz:gsWAZYX86hIf@
