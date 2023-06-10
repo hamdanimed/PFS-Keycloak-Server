@@ -17,8 +17,10 @@ COPY --from=builder /opt/keycloak/ /opt/keycloak/
 
 # change these values to point to a running postgres instance
 ENV KC_DB=postgres
-ENV KC_DB_URL=<DBURL>
-ENV KC_DB_USERNAME=<DBUSERNAME>
-ENV KC_DB_PASSWORD=<DBPASSWORD>
-ENV KC_HOSTNAME=localhost
+ENV KC_DB_URL=jdbc:postgres:ep-plain-term-789572.eu-central-1.aws.neon.tech/neondb
+ENV KC_DB_USERNAME=hamzal3azz
+ENV KC_DB_PASSWORD=gsWAZYX86hIf
+# ENV KC_HOSTNAME=localhost
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
+
+# postgres://hamzal3azz:gsWAZYX86hIf@
