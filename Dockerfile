@@ -20,6 +20,10 @@ ENV KC_DB=postgres
 ENV KC_DB_URL=jdbc:postgres:ep-plain-term-789572.eu-central-1.aws.neon.tech/neondb
 ENV KC_DB_USERNAME=hamzal3azz
 ENV KC_DB_PASSWORD=gsWAZYX86hIf
+ENV KC_KEYCLOAK_ADMIN=admin
+ENV KC_KEYCLOAK_ADMIN_PASSWORD=admin
+ENV KC_HTTP_PORT=8080
+ 
 # ENV KC_HOSTNAME=localhost
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh","start"]
 
