@@ -24,7 +24,7 @@ ENV KC_KEYCLOAK_ADMIN=admin
 ENV KC_KEYCLOAK_ADMIN_PASSWORD=admin
 ENV KC_HTTP_PORT=8080
  
-# ENV KC_HOSTNAME=localhost
+ENV KC_HOSTNAME=localhost
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh","start"]
 
 # postgres://hamzal3azz:gsWAZYX86hIf@
