@@ -72,11 +72,11 @@ FROM quay.io/keycloak/keycloak:latest
 # ENV KC_HTTPS_CERTIFICATE_FILE=/opt/keycloak/keycloak-server.crt.pem 
 # ENV KC_HTTPS_CERTIFICATE_KEY_FILE=/opt/keycloak/keycloak-server.key.pem
 
-ENV KC_DB=postgres
-ENV KC_DB_URL=jdbc:postgres:ep-plain-term-789572.eu-central-1.aws.neon.tech/neondb
-ENV KC_DB_USERNAME=hamzal3azz
-ENV KC_DB_PASSWORD=gsWAZYX86hIf 
-ENV KC_HOSTNAME=localhost 
+# ENV KC_DB=postgres
+# ENV KC_DB_URL=jdbc:postgres:ep-plain-term-789572.eu-central-1.aws.neon.tech/neondb
+# ENV KC_DB_USERNAME=hamzal3azz
+# ENV KC_DB_PASSWORD=gsWAZYX86hIf 
+# ENV KC_HOSTNAME=localhost 
 # ENV KC_KEYCLOAK_ADMIN=admin
 # ENV KC_KEYCLOAK_ADMIN_PASSWORD=admin
 # ENV KC_HTTP_PORT=8080
