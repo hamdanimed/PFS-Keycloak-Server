@@ -89,5 +89,10 @@ FROM quay.io/keycloak/keycloak:latest
 
 ENV KEYCLOAK_ADMIN=admin
 ENV KEYCLOAK_ADMIN_PASSWORD=password
+ENV KC_DB=postgres
+ENV KC_DB_USERNAME=hamzal3azz
+ENV KC_DB_PASSWORD=gsWAZYX86hIf
+ENV KC_DB_URL=postgres:ep-plain-term-789572.eu-central-1.aws.neon.tech/neondb
 
-CMD ["start-dev", "--db", "postgres", "--db-url", "jdbc:postgres:ep-plain-term-789572.eu-central-1.aws.neon.tech/neondb", "--db-username", "hamzal3azz", "--db-password", "gsWAZYX86hIf"]
+# CMD ["start-dev", "--db", "postgres", "--db-url", "jdbc:postgres:ep-plain-term-789572.eu-central-1.aws.neon.tech/neondb", "--db-username", "hamzal3azz", "--db-password", "gsWAZYX86hIf"]
+CMD ["start-dev"]
