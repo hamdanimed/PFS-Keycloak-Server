@@ -65,7 +65,7 @@
 
 # ENTRYPOINT ["/opt/keycloak/bin/kc.sh","start-dev"]
 
-FROM quay.io/keycloak/keycloak:latest 
+# FROM quay.io/keycloak/keycloak:latest 
 # COPY --from=builder /opt/keycloak/ /opt/keycloak/
 # WORKDIR /opt/keycloak
 
@@ -81,6 +81,13 @@ FROM quay.io/keycloak/keycloak:latest
 # ENV KC_KEYCLOAK_ADMIN_PASSWORD=admin
 # ENV KC_HTTP_PORT=8080
 
-RUN /opt/keycloak/bin/kc.sh --db postgres --db-url jdbc:postgres:ep-plain-term-789572.eu-central-1.aws.neon.tech/neondb --db-username hamzal3azz --db-password gsWAZYX86hIf start-dev
+# RUN /opt/keycloak/bin/kc.sh --db postgres --db-url jdbc:postgres:ep-plain-term-789572.eu-central-1.aws.neon.tech/neondb --db-username hamzal3azz --db-password gsWAZYX86hIf start-dev
 
 # ENTRYPOINT ["/opt/keycloak/bin/kc.sh","start-dev"]
+
+FROM quay.io/keycloak/keycloak:latest
+
+ENV KEYCLOAK_ADMIN=admin
+ENV KEYCLOAK_ADMIN_PASSWORD=password
+
+CMD ["start-dev", "--db", "postgres", "--db-url", "jdbc:postgres:ep-plain-term-789572.eu-central-1.aws.neon.tech/neondb", "--db-username", "hamzal3azz", "--db-password", "gsWAZYX86hIf"]
